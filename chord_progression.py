@@ -91,7 +91,7 @@ class ChordProgressionWindow(QWidget):
     def set_root_chord(self, root, chord_type):
         self.root_chord = (root, chord_type)
         display_root = root[:-1] if len(root) > 1 and root[-1].isdigit() else root
-        self.root_display.setText(f"Root: {display_root} {chord_type}")
+        self.root_display.setText(f"Key: {display_root} Major")
         self.generate_button.setEnabled(True)
     
     # Generate chord progression based on root chord and selected progression type

@@ -607,24 +607,12 @@ class Ui_MainWindow(object):
 
     # Utility Section
 
-    # def play_chord(self, chord_notes):
-    #     # Play all notes in a chord simultaneously
-    #     self.chordNotes = chord_notes
-    #     for note in chord_notes:
-    #         button = self._get_button_from_note(note)
-    #         if button:
-    #             self.handle_key_click(button)
-
     def _get_button_from_note(self, note):
         # Find button object corresponding to a note name
         for button in self.buttons.values():
             if button.objectName() == note:
                 return button
         return None
-
-    # def set_chord_notes(self, chord_notes):
-    #     # Store chord notes for later use
-    #     self.chordNotes = chord_notes
 
     def retranslateUi(self, MainWindow):
         # Set up text translations for UI elements

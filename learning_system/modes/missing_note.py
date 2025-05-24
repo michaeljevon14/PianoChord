@@ -89,7 +89,7 @@ class MissingNoteMode:
         
         # Highlight present notes in blue
         for note in self.incomplete_chord_notes:
-            button = self.main_window.buttons.get(note)
+            button = self.learning_ui.get_piano_button_for_note(note)
             if button:
                 button.setStyleSheet("background-color: rgb(70, 130, 255); border: 2px solid rgb(50, 100, 200);")
         
